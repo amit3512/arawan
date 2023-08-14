@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, List, Typography } from "antd";
+import Lists from "./listTodos";
 
 const { Text } = Typography;
 
@@ -32,7 +33,7 @@ export default function ToDoLists() {
     <>
       <Text className="t-d-l-t"> To-Do Lists</Text>
 
-      <List
+      {/* <List
         dataSource={dataFiltered}
         renderItem={(item, idx) => (
           <List.Item>
@@ -63,7 +64,8 @@ export default function ToDoLists() {
             </div>
           </List.Item>
         )}
-      />
+      /> */}
+      <Lists todoLists={todoLists} />
     </>
   );
 }

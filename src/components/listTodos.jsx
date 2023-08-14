@@ -1,17 +1,18 @@
 import { Button, List } from "antd";
 
-const todoLists = [
-  {
-    id: 1,
-    label: "Todo1",
-  },
-  {
-    id: 2,
-    label: "Todo2",
-  },
-];
+// const todoLists = [
+//   {
+//     id: 1,
+//     label: "Todo1",
+//   },
+//   {
+//     id: 2,
+//     label: "Todo2",
+//   },
+// ];
 
-export default function ToDoLists() {
+export default function Lists(props) {
+  const { todoLists } = props;
   const handleEdit = (id) => {
     console.log(`Edit item with ID ${id}`);
   };
