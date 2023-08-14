@@ -1,25 +1,8 @@
 import { Button, List } from "antd";
 
-// const todoLists = [
-//   {
-//     id: 1,
-//     label: "Todo1",
-//   },
-//   {
-//     id: 2,
-//     label: "Todo2",
-//   },
-// ];
-
 export default function Lists(props) {
-  const { todoLists } = props;
-  const handleEdit = (id) => {
-    console.log(`Edit item with ID ${id}`);
-  };
+  const { todoLists, handleEdit, handleDelete, type } = props;
 
-  const handleDelete = (id) => {
-    console.log(`Delete item with ID ${id}`);
-  };
   return (
     <>
       <List
@@ -29,19 +12,24 @@ export default function Lists(props) {
             <div className="t-d-l">
               {idx + 1}. {item.label}
               <div>
-                <Button type="primary" onClick={() => handleEdit(item.id)}>
-                  Mark as Complete
+                <Button
+                  className={`t-d-l-b ${type}`}
+                  onClick={() => handleEdit(item.id)}
+                >
+                  {type === "complete" ? "Undo" : "Mark as Complete"}
                 </Button>
-
                 <Button
                   type="primary"
-                  className="t-d-l-b"
+                  className="t-d-l-b edit"
                   onClick={() => handleEdit(item.id)}
                 >
                   Edit
                 </Button>
-
-                <Button danger onClick={() => handleDelete(item.id)}>
+                <Button
+                  className="t-d-l-b delete"
+                  danger
+                  onClick={() => handleDelete(item.id, type)}
+                >
                   Delete
                 </Button>
               </div>
