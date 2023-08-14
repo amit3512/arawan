@@ -1,0 +1,32 @@
+.t-t-c {
+  text-align: center;
+}
+
+.t-d-l {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .t-d-l-b {
+    margin: 0px 10px 5px 10px;
+    color: #fff;
+  }
+
+  .complete {
+    background-color: rgb(94, 134, 94);
+  }
+
+  .undo {
+    background-color: rgb(195, 218, 24);
+  }
+
+  .delete {
+    color: crimson;
+  }
+}
+
+.t-d-l-t {
+  font-weight: bold;
+  font-size: 16px;
+}
