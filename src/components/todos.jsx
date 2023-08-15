@@ -1,18 +1,20 @@
-import { useState } from "react";
 import { Button, List, Typography } from "antd";
 import Lists from "./listTodos";
 
 const { Text } = Typography;
 
 export default function ToDoLists(props) {
-  const { todoLists, handleEdit, handleDelete } = props;
+  const { todoLists, handleEdit, handleDelete, handleMarkAsComplete } = props;
 
   return (
     <>
-      <Text className="t-d-l-t"> To-Do Lists</Text>
+      <div className="t-d-l-t">
+        <Text> To-Do Lists</Text>
+      </div>
 
       <Lists
         todoLists={todoLists}
+        handleMarkAsComplete={handleMarkAsComplete}
         handleEdit={handleEdit}
         handleDelete={handleDelete}
         type="incomplete"

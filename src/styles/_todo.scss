@@ -8,6 +8,14 @@
   align-items: center;
   width: 100%;
 
+  .t-d-label {
+    width: 550px;
+    word-wrap: break-word;
+    white-space: wrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+  }
+
   .t-d-l-b {
     margin: 0px 10px 5px 10px;
     color: #fff;
@@ -29,4 +37,19 @@
 .t-d-l-t {
   font-weight: bold;
   font-size: 16px;
+  background: lightgrey;
+  width: 100%;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+
+  .t-d-submit-b {
+    background-color: rgb(109, 219, 109);
+    margin-left: 10px;
+  }
+  .c-t-input-field {
+    width: 100%;
+  }
 }
