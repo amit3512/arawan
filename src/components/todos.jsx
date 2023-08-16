@@ -9,7 +9,7 @@ export default function ToDoLists(props) {
   return (
     <>
       <div className="t-d-l-t">
-        <Text> To-Do Lists</Text>
+        <Text>Active To-Do Lists</Text>
       </div>
 
       <Lists
