@@ -12,7 +12,6 @@ Welcome to the React.js To-Do Application! This is a simple web application buil
 - [Features](#features)
 - [Contributing](#contributing)
 
-
 ## Getting Started
 
 ### Prerequisites
