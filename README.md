@@ -11,7 +11,7 @@ Welcome to the React.js To-Do Application! This is a simple web application buil
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Getting Started
 
